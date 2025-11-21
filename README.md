@@ -4,6 +4,10 @@ Premiere Night is a cross-platform mobile application built with **React Native*
 
 ---
 
+
+<img src="https://raw.githubusercontent.com/alanstlim/premiere/refs/heads/main/home.jpeg" alt="drawing" width="300"/> <img src="https://raw.githubusercontent.com/alanstlim/premiere/refs/heads/main/watchlist.jpeg" alt="drawing" width="300"/><img src="https://raw.githubusercontent.com/alanstlim/premiere/refs/heads/main/details.jpeg" alt="drawing" width="300"/>
+
+
 ## 🚀 Features
 
 - Home screen with responsive movie grid (2–3 columns depending on screen width)
