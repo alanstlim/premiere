@@ -8,6 +8,7 @@ import MovieCard from '../../components/MovieCard';
 import SearchBar from '../../components/SearchBar';
 import { getPopularMovies, Movie, searchMovies } from '../../services/movies';
 import { TabsScreenNavigation } from '../../navigation/types';
+import { useWatchlist } from '../../store/useWatchlist';
 
 type Props = {
   navigation: TabsScreenNavigation;
@@ -23,6 +24,8 @@ export default function HomeScreen({ navigation }: Props) {
 
   const { width } = useWindowDimensions();
   const tabBarHeight = useBottomTabBarHeight();
+
+  const { cachedMovies, setCachedMovies } = useWatchlist();
 
   const numColumns = width > 500 ? 3 : 2;
   const spacing = 12;
@@ -46,13 +49,22 @@ export default function HomeScreen({ navigation }: Props) {
 
         setPage(prev => (reset ? 2 : prev + 1));
         setError(false);
+
+        if (reset) {
+          setCachedMovies(response.results);
+        }
       } catch {
-        setError(movies.length === 0);
+        if (cachedMovies.length > 0) {
+          setMovies(cachedMovies);
+          setError(false);
+        } else {
+          setError(true);
+        }
       }
 
       setLoading(false);
     },
-    [loading, page, movies],
+    [loading, page, setCachedMovies, cachedMovies],
   );
 
   const requestSearchMovie = useCallback(

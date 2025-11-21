@@ -5,6 +5,9 @@ import { Movie } from '../services/movies';
 
 type WatchlistStore = {
   watchlist: Movie[];
+  cachedMovies: Movie[];
+  setCachedMovies: (movies: Movie[]) => void;
+
   addToWatchlist: (movie: Movie) => void;
   removeFromWatchlist: (id: number) => void;
   isInWatchlist: (id: number) => boolean;
@@ -14,6 +17,12 @@ export const useWatchlist = create(
   persist<WatchlistStore>(
     (set, get) => ({
       watchlist: [],
+      cachedMovies: [],
+
+      setCachedMovies: movies =>
+        set({
+          cachedMovies: movies,
+        }),
 
       addToWatchlist: movie =>
         set({
@@ -30,7 +39,6 @@ export const useWatchlist = create(
 
     {
       name: 'watchlist-storage',
-
       storage: createJSONStorage(() => AsyncStorage),
     },
   ),
