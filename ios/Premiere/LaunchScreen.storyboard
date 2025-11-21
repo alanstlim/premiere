@@ -17,13 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Iwl-px-4wa">
-                                <rect key="frame" x="67" y="111" width="240" height="325"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Iwl-px-4wa">
+                                <rect key="frame" x="67" y="111" width="240" height="334"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Premiere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-Hs-3RF">
-                                <rect key="frame" x="16" y="397" width="343" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premiere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-Hs-3RF">
+                                <rect key="frame" x="16" y="397" width="240" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,6 +29,29 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iwl-px-4wa" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="91" id="0G7-VI-MVE"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="Iwl-px-4wa" secondAttribute="bottom" constant="231" id="0Zk-09-5BO"/>
+                            <constraint firstItem="Iwl-px-4wa" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="67" id="1i5-az-nzW"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="Iwl-px-4wa" secondAttribute="trailing" constant="16" id="9BZ-6E-5hw"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="5JM-Hs-3RF" secondAttribute="bottom" constant="231" id="9FW-1B-h5U"/>
+                            <constraint firstItem="5JM-Hs-3RF" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="67" id="DLY-hv-8mf"/>
+                            <constraint firstItem="5JM-Hs-3RF" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="16" id="JVq-Bo-YWZ"/>
+                            <constraint firstItem="Iwl-px-4wa" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="100" id="LdU-Pw-CK0"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="Iwl-px-4wa" secondAttribute="trailing" constant="68" id="Ojj-gh-TyY"/>
+                            <constraint firstItem="Iwl-px-4wa" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="16" id="Ota-rN-mz4"/>
+                            <constraint firstItem="5JM-Hs-3RF" firstAttribute="height" secondItem="Iwl-px-4wa" secondAttribute="height" id="Rgi-3S-IyP"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="5JM-Hs-3RF" secondAttribute="trailing" constant="68" id="Zcl-Ot-elF"/>
+                            <constraint firstItem="Iwl-px-4wa" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="67" id="gVr-iM-qCw"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="Iwl-px-4wa" secondAttribute="trailing" constant="68" id="jae-rA-F52"/>
+                            <constraint firstItem="5JM-Hs-3RF" firstAttribute="width" secondItem="Iwl-px-4wa" secondAttribute="width" id="mf2-FH-eq9"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="Iwl-px-4wa" secondAttribute="bottom" constant="231" id="ohr-n5-xkn"/>
+                            <constraint firstItem="5JM-Hs-3RF" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="377" id="qQc-h6-XI5"/>
+                            <constraint firstItem="Iwl-px-4wa" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="91" id="rMp-Nk-7Ba"/>
+                            <constraint firstItem="5JM-Hs-3RF" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="16" id="xY5-BM-JEm"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="5JM-Hs-3RF" secondAttribute="trailing" constant="16" id="yi4-Ex-9x7"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="5JM-Hs-3RF" secondAttribute="trailing" constant="16" id="zWM-lp-ipG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
